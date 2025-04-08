@@ -14,11 +14,18 @@ import { TiContacts } from "react-icons/ti";
 import { FaPaperPlane } from "react-icons/fa";
 import Link from "next/link";
 import { ThemeMode } from "./Mode";
+import { useSelector } from "react-redux";
 
 export const Header = () => {
+  const themeStatus = useSelector((theme) => theme.theme.themeStatus);
+
   return (
     <>
-      <div>
+      <div
+        className={`fixed inset-y-0 left-0 top-0 h-[100vh] w-[18%] z-20 overflow-y-scroll ${
+          themeStatus ? "bg-[#1E2A3A]" : "bg-[#54B689]"
+        }`}
+      >
         <div className="py-3 px-2">
           <ThemeMode />
         </div>

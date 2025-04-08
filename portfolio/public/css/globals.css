@@ -10,6 +10,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fafafa;
   color: #000;
@@ -82,8 +86,7 @@ body {
   animation-delay: 0.8s;
 }
 
-/* Theme Button */
-.theme-button::after {
+/* Theme Button .theme-button::after {
   content: "";
   display: block;
   width: 30px;
@@ -94,4 +97,4 @@ body {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
-}
+} */
